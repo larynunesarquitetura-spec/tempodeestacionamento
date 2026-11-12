@@ -1,0 +1,139 @@
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f4f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #263445;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Cartão do parquímetro */
+.parquimetro {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* Título */
+.parquimetro h1 {
+    font-size: 28px;
+    color: #183b56;
+    margin-bottom: 12px;
+}
+
+/* Descrição */
+.parquimetro > p {
+    color: #718096;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 12px;
+}
+
+/* Label */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #263445;
+}
+
+/* Campo de valor */
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dce3eb;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #2878a8;
+    box-shadow: 0 0 0 3px rgba(40, 120, 168, 0.12);
+}
+
+/* Botão */
+button {
+    background: #183b56;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: #2878a8;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Área de resultado */
+.resultado {
+    background: #f5f8fb;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 25px;
+    min-height: 70px;
+    text-align: center;
+    color: #263445;
+}
+
+.resultado h2 {
+    color: #183b56;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.resultado p {
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+
+    .parquimetro {
+        padding: 30px 20px;
+    }
+
+    .parquimetro h1 {
+        font-size: 24px;
+    }
+
+}
